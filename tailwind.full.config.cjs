@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+//Importando las propiedades por defecto de Tailwind
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [],
   presets: [],
@@ -950,6 +954,12 @@ module.exports = {
       40: '40',
       50: '50',
     },
+    extend: {
+      //Override, sobreescribir la funte por defecto en las propiedades de Tailwind con nuestra propia fuente
+      fontFamily: {
+        sans: ['Tajawal', ...defaultTheme.fontFamily.sans]
+      }
+    }
   },
   plugins: [],
 }

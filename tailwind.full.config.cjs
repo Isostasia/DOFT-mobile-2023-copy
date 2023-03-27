@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-
-//Importando las propiedades por defecto de Tailwind
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
-  content: [],
+  //Setting up of all template project files template paths in content (Tailwind installation)
+  content: ['./src/**/*.{html,js,svelte,ts}'],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
@@ -954,12 +951,6 @@ module.exports = {
       40: '40',
       50: '50',
     },
-    extend: {
-      //Override, sobreescribir la funte por defecto en las propiedades de Tailwind con nuestra propia fuente
-      fontFamily: {
-        sans: ['Tajawal', ...defaultTheme.fontFamily.sans]
-      }
-    }
   },
   plugins: [],
 }

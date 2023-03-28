@@ -1,3 +1,6 @@
+//Importing default settings of TailwindCSS
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   //Setting up of all template project files template paths in content (Tailwind installation)
@@ -951,6 +954,13 @@ module.exports = {
       40: '40',
       50: '50',
     },
+    extend: {
+      //Override, sobreescribir la funte por defecto en las propiedades de Tailwind con nuestra propia fuente
+      fontFamily: {
+        sans: ['Tajawal', ...defaultTheme.fontFamily.sans]
+      }
+    }
   },
-  plugins: [],
+  //Adding minimal styling to forms
+  plugins: [require('@tailwindcss/forms')],
 }

@@ -1,3 +1,4 @@
+//Importing default theme settings of TailwindCSS
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
@@ -960,6 +961,7 @@ module.exports = {
       }
     }
   },
+  //Adding minimal styling to forms
   plugins: [
     require('@tailwindcss/forms')
   ],

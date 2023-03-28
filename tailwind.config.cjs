@@ -1,4 +1,4 @@
-//Importando las propiedades por defecto de Tailwind
+//Importing default theme settings of TailwindCSS
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
@@ -13,6 +13,7 @@ module.exports = {
       sans: ['Tajawal', ...defaultTheme.fontFamily.sans]
     }
   },
+  //Adding minimal styling to forms
   plugins: [
     require('@tailwindcss/forms')
   ],

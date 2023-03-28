@@ -83,7 +83,7 @@
 <style lang="postcss">
     /* styles go here */
     :global(html) {
-      background-color: theme(colors.gray.800);
+      background-color: theme(colors.gray.500);
     }
 
     :global(:root){

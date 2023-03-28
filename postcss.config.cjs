@@ -1,5 +1,5 @@
 //Adding PurgeCSS to remove unused CSS code
-const purgecss = require('@fullhuman/postcss-purgecss')
+  // const purgecss = require('@fullhuman/postcss-purgecss')
 
 module.exports = {
   plugins: [
@@ -11,13 +11,13 @@ module.exports = {
     //purgecss({
     //  content: ['./**/*.html']
     //})
-    require('@fullhuman/postcss-purgecss')({
-      content: [
-        './src/**/*.svelte'
-      ],
-      defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-      //Removing unused TailwindCSS variables 
-      variables: true
-    })
+    // require('@fullhuman/postcss-purgecss')({
+    //   content: [
+    //     './src/**/*.svelte'
+    //   ],
+    //   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+    //   //Removing unused TailwindCSS variables 
+    //   variables: true
+    // })
   ]
 }

@@ -1,9 +1,8 @@
-//Importing default settings of TailwindCSS
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  //Setting up of all template project files template paths in content (Tailwind installation)
   content: ['./src/**/*.{html,js,svelte,ts}'],
   presets: [],
   darkMode: 'media', // or 'class'
@@ -961,6 +960,7 @@ module.exports = {
       }
     }
   },
-  //Adding minimal styling to forms
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

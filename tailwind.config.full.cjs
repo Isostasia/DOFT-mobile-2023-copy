@@ -1,5 +1,6 @@
 //Importing default theme settings of TailwindCSS
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 
@@ -963,6 +964,15 @@ module.exports = {
   },
   //Adding minimal styling to forms
   plugins: [
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms')({
+      strategy: 'base' //only generate global styles
+    }),
+    plugin(function({ addComponents }) {
+      addComponents({
+        '.input-mobile': {
+          padding: '.375rem .75rem',
+        },
+      })
+    }),
   ],
 }

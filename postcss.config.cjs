@@ -15,8 +15,8 @@ module.exports = {
     //   content: [
     //     './src/**/*.svelte'
     //   ],
-    //   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-    //   //Removing unused TailwindCSS variables 
+    //   defaultExtractor: content => content.match(/[A-Za-z0-9-_:]+/g) || [],
+    //   //Removing unused TailwindCSS variables default conf = A-Za-z0-9-_:
     //   variables: true
     // })
   ]

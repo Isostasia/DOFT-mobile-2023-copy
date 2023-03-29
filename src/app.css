@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap');
 
 /*Adding Tailwind Config file*/
-@config "../tailwind.full.config.cjs";
+@config '../tailwind.config.cjs';
 
 /*Adding Tailwind directives*/
 @tailwind base;
